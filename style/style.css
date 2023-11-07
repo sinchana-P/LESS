@@ -1,22 +1,12 @@
-header {
-  color: #c76dbc;
-}
-footer {
-  color: #c76dbc;
-}
-button {
-  background-color: #c76dbc;
-}
-.fancier-border {
-  border: 7px dashed #da2f4c;
+main {
   background-color: yellow;
-  border-radius: 5px;
 }
-p {
-  margin: 10px;
-}
-p {
+main p {
   color: red;
-  font-size: 20px;
-  color: blue;
+}
+main article {
+  background-color: blue;
+}
+main article p {
+  color: yellow;
 }

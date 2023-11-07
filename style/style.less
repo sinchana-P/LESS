@@ -9,76 +9,112 @@
 // --- 1. variables ----
 // To maintain Theme
 
-@theme-color: rgb(199, 109, 188);
-@p-margin-size: 10px;
+// @theme-color: rgb(191, 109, 199);
+// @p-margin-size: 10px;
 
 
-header{
-    color: @theme-color;
-}
+// header{
+//     color: @theme-color;
+// }
 
-footer{
-    color: @theme-color;
-}
+// footer{
+//     color: @theme-color;
+// }
 
-button{
-    background-color: @theme-color;
-}
+// button{
+//     background-color: @theme-color;
+// }
 
-// ---- 2. Mixins ------
-// 1. can embed the attributes from one class into another.
-// 2. .fancy-border() : tells that we only want to use this "CLASS" inside the less file, not in css file, even though its mentioned in html file class name.
+// // ---- 2. Mixins ------
+// // 1. can embed the attributes from one class into another.
+// // 2. .fancy-border() : tells that we only want to use this "CLASS" inside the less file, not in css file, even though its mentioned in html file class name.
 
-// .fancy-border() {
-//     border: 1px dashed black;
+// // .fancy-border() {
+// //     border: 1px dashed black;
+// // }
+
+// // .fancier-border {
+// //     .fancy-border;
+// //     background-color: yellow;
+// //     border-radius: 5px;
+// // }
+
+
+// .fancy-border(@size: 1px, @color: black) {
+//     border: @size dashed @color;
 // }
 
 // .fancier-border {
-//     .fancy-border;
+//     .fancy-border(7px, rgb(218, 47, 76));
 //     background-color: yellow;
 //     border-radius: 5px;
 // }
 
 
-.fancy-border(@size: 1px, @color: black) {
-    border: @size dashed @color;
-}
-
-.fancier-border {
-    .fancy-border(7px, rgb(218, 47, 76));
-    background-color: yellow;
-    border-radius: 5px;
-}
 
 
+// p {
+//     margin: @p-margin-size;
+// }
 
+// // ----- 3. Conditionals & Mixin Guards -----
+// // refer mixin-guards: https://lesscss.org/features/#mixins-feature-mixin-guards-feature
 
-p {
-    margin: @p-margin-size;
-}
+// // .p-style(@size) {
+// //     font-size: @size;
+// //     color: red;
+// // }
 
-// ----- 3. Conditionals & Mixin Guards -----
-// refer mixin-guards: https://lesscss.org/features/#mixins-feature-mixin-guards-feature
+// // p {
+// //     .p-style(20px);
+// // }
 
-// .p-style(@size) {
+// .p-style(@size) when (@size <= 20) {
 //     font-size: @size;
 //     color: red;
+// }
+
+// .p-style(@size) when (@size >= 20) {
+//     font-size: @size;
+//     color: blue;
 // }
 
 // p {
 //     .p-style(20px);
 // }
 
-.p-style(@size) when (@size <= 20) {
-    font-size: @size;
-    color: red;
+// ---- 4. Nesting & Scope -----
+
+// main {
+//     background-color: yellow;
+// }
+
+// main p {
+//     color: red;
+// }
+
+// main article p{
+//     color: rgb(32, 208, 53)
+// }
+
+
+main {
+    background-color: yellow;
+    p {
+        color: red;
+    }
+    article {
+        background-color: blue;
+        p{
+            color: yellow;
+        }
+    }
 }
 
-.p-style(@size) when (@size >= 20) {
-    font-size: @size;
-    color: blue;
-}
+// main p {
+//     color: red;
+// }
 
-p {
-    .p-style(20px);
-}
+// main article p{
+//     color: rgb(32, 208, 53)
+// }
