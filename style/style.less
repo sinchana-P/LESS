@@ -25,20 +25,21 @@
 //     background-color: @theme-color;
 // }
 
-// // ---- 2. Mixins ------
-// // 1. can embed the attributes from one class into another.
-// // 2. .fancy-border() : tells that we only want to use this "CLASS" inside the less file, not in css file, even though its mentioned in html file class name.
+// ---- 2. Mixins ------
+// 1. can embed the attributes from one class into another.
+// 2. .fancy-border() : tells that we only want to use this "CLASS" inside the less file, not in css file, even though its mentioned in html file class name.
 
-// // .fancy-border() {
-// //     border: 1px dashed black;
-// // }
+// .fancy-border() {
+//     border: 1px dashed black;
+// }
 
-// // .fancier-border {
-// //     .fancy-border;
-// //     background-color: yellow;
-// //     border-radius: 5px;
-// // }
+// .fancier-border {
+//     .fancy-border;
+//     background-color: yellow;
+//     border-radius: 5px;
+// }
 
+// ---------------------------------------------
 
 // .fancy-border(@size: 1px, @color: black) {
 //     border: @size dashed @color;
@@ -57,17 +58,19 @@
 //     margin: @p-margin-size;
 // }
 
-// // ----- 3. Conditionals & Mixin Guards -----
-// // refer mixin-guards: https://lesscss.org/features/#mixins-feature-mixin-guards-feature
+// ----- 3. Conditionals & Mixin Guards -----
+// refer mixin-guards: https://lesscss.org/features/#mixins-feature-mixin-guards-feature
 
-// // .p-style(@size) {
-// //     font-size: @size;
-// //     color: red;
-// // }
+// .p-style(@size) {
+//     font-size: @size;
+//     color: red;
+// }
 
-// // p {
-// //     .p-style(20px);
-// // }
+// p {
+//     .p-style(20px);
+// }
+
+// --------------------------------------------------
 
 // .p-style(@size) when (@size <= 20) {
 //     font-size: @size;
