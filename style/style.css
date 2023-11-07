@@ -7,11 +7,8 @@ footer {
 button {
   background-color: #c76dbc;
 }
-.fancy-border {
-  border: 1px dashed black;
-}
 .fancier-border {
-  border: 1px dashed black;
+  border: 7px dashed #da2f4c;
   background-color: yellow;
   border-radius: 5px;
 }
