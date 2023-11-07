@@ -25,9 +25,19 @@ button{
     background-color: @theme-color;
 }
 
+// ---- 2. Mixins ------
+// 1. can embed the attributes from one class into another.
 
 
+.fancy-border {
+    border: 1px dashed black;
+}
 
+.fancier-border {
+    .fancy-border;
+    background-color: yellow;
+    border-radius: 5px;
+}
 
 
 
