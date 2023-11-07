@@ -1,12 +1,9 @@
-main {
-  background-color: yellow;
+p {
+  font-size: 20px;
+  background-color: antiquewhite;
+  color: #6f2f16;
 }
-main p {
-  color: red;
-}
-main article {
-  background-color: blue;
-}
-main article p {
-  color: yellow;
+button {
+  font-size: 22px;
+  background-color: #fff7de;
 }

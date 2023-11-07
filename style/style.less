@@ -98,23 +98,31 @@
 // }
 
 
-main {
-    background-color: yellow;
-    p {
-        color: red;
-    }
-    article {
-        background-color: blue;
-        p{
-            color: yellow;
-        }
-    }
+// main {
+//     background-color: yellow;
+//     p {
+//         color: red;
+//     }
+//     article {
+//         background-color: blue;
+//         p{
+//             color: yellow;
+//         }
+//     }
+// }
+
+// ---- 5. Operators ----
+
+@base-size: 20px;
+@base-color: #6f2f16;
+
+p {
+    font-size: @base-size;
+    background-color: antiquewhite;
+    color: @base-color;
 }
 
-// main p {
-//     color: red;
-// }
-
-// main article p{
-//     color: rgb(32, 208, 53)
-// }
+button {
+    font-size: @base-size + 2;
+    background-color: @base-color + 200;
+}
