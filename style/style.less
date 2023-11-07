@@ -113,16 +113,25 @@
 
 // ---- 5. Operators ----
 
-@base-size: 20px;
-@base-color: #6f2f16;
+// @base-size: 20px;
+// @base-color: #6f2f16;
 
-p {
-    font-size: @base-size;
-    background-color: antiquewhite;
-    color: @base-color;
-}
+// p {
+//     font-size: @base-size;
+//     background-color: antiquewhite;
+//     color: @base-color;
+// }
+
+// button {
+//     font-size: @base-size + 2;
+//     background-color: @base-color + 200;   // make it lighter by 200.
+// }
+
+// ----- 6. functions -----
+// refer : https://lesscss.org/functions/#functions-overview
 
 button {
-    font-size: @base-size + 2;
-    background-color: @base-color + 200;
+    font-size: 40px;
+    background-color: desaturate(red, 50%);
 }
+
