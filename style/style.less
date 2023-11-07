@@ -56,3 +56,29 @@ button{
 p {
     margin: @p-margin-size;
 }
+
+// ----- 3. Conditionals & Mixin Guards -----
+// refer mixin-guards: https://lesscss.org/features/#mixins-feature-mixin-guards-feature
+
+// .p-style(@size) {
+//     font-size: @size;
+//     color: red;
+// }
+
+// p {
+//     .p-style(20px);
+// }
+
+.p-style(@size) when (@size <= 20) {
+    font-size: @size;
+    color: red;
+}
+
+.p-style(@size) when (@size >= 20) {
+    font-size: @size;
+    color: blue;
+}
+
+p {
+    .p-style(20px);
+}

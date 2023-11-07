@@ -15,3 +15,8 @@ button {
 p {
   margin: 10px;
 }
+p {
+  color: red;
+  font-size: 20px;
+  color: blue;
+}
