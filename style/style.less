@@ -1,7 +1,40 @@
 // Less: is a wrapper for css file
 // All CSS files r LESS files
 
-html{
-    color: blue;
-    background-color: rgb(221, 66, 14);
+// html{
+//     color: blue;
+//     background-color: rgb(221, 66, 14);
+// }
+
+// --- 1. variables ----
+// To maintain Theme
+
+@theme-color: rgb(199, 109, 188);
+@p-margin-size: 10px;
+
+
+header{
+    color: @theme-color;
+}
+
+footer{
+    color: @theme-color;
+}
+
+button{
+    background-color: @theme-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+p {
+    margin: @p-margin-size;
 }

@@ -7,3 +7,6 @@
 
 # Plugins:
 - npm install less-watcher
+
+# To Watch
+- less-watcher -p "" -d style

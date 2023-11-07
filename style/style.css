@@ -1,4 +1,12 @@
-html {
-  color: blue;
-  background-color: #d7fae9;
+header {
+  color: #c76dbc;
+}
+footer {
+  color: #c76dbc;
+}
+button {
+  background-color: #c76dbc;
+}
+p {
+  margin: 10px;
 }
