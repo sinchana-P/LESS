@@ -1,0 +1,28 @@
+PowerShell:
+
+1. npm install -g less
+2. npm list -g less
+
+3. npm install -g less-watcher
+4. $env:PATH
+	(   $env:PATH += ";C:\path\to\directory"  )
+
+5. lessc --version
+
+
+---- If Issue Persist -------
+
+1. Get-ExecutionPolicy
+2. Set-ExecutionPolicy RemoteSigned
+3. Get-ExecutionPolicy
+
+4. lessc --version
+
+-----------
+Reset the execution policy (Optional):
+After you've finished using less-watcher, it's a good practice to reset the execution policy to a more restrictive setting for security. Run the following command to set the execution policy back to its default value:
+
+powershell:
+
+5. Set-ExecutionPolicy Restricted
+-----------
